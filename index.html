@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>חאפר .com – משוגעים על קיצורי דרך</title>
+
+    <!-- Responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP (animations) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!-- Lava‑lamp blobs -->
+    <div class="bg‑blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+
+    <!-- ─── Hero ─────────────────────────────────────────── -->
+    <header class="hero">
+      <h1>
+        you are here because you did something in a&nbsp;very
+        <span class="hafer">חאפר</span> way
+      </h1>
+      <header class="hero">
+        <p class="sub">
+          We salute your creative shortcuts.<br />
+          Keep it up, and don’t let the haters get you down.
+        </p>
+      </header>
+    </header>
+
+    <!-- ─── Weekly חאפר spotlight ───────────────────────── -->
+    <section class="weekly-hafer">
+      <h2>חאפר this week</h2>
+      <p>
+        This week’s חאפר is <strong>Elior</strong>, who has never shown up to the
+        weekly once in his entire time at the company.<br />
+        Elior is a true חאפר—he practically invented the term.<br />
+        Elior, we salute you and your gloriously חאפר ways.
+      </p>
+      <img
+        src="img/elior.jpeg"
+        alt="Elior – the original חאפר"
+        class="spotlight-img"
+      />
+    </section>
+
+    <!-- ─── Hall of Fame ────────────────────────────────── -->
+    <section class="hall-of-fame">
+      <h2 class="title-fancy">Hall&nbsp;of&nbsp;Fame&nbsp;חאפרים</h2>
+
+      <div class="gallery">
+        <figure data-caption="Elior – skipped every weekly">
+          <img src="img/elior.jpeg" alt="Elior – skipped weeklies" />
+        </figure>
+
+        <figure data-caption="Dvir – somehow killed every RabbitMQ of every dev in the company">
+          <img
+            src="https://ca.slack-edge.com/T08TZ9AFP-U05DTEFCJ5P-bac03fced9db-512"
+            alt="Dvir and the great RabbitMQ meltdown"
+          />
+        </figure>
+
+        <!-- add more <figure> blocks the same way -->
+      </div>
+    </section>
+
+    <!-- Overlay (kept for future modals) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- JavaScript logic -->
+    <script src="main.js"></script>
+  </body>
+</html>
